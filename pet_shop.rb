@@ -12,7 +12,7 @@ class PetShop
   end
 
   def get_names_of_all_pets_of_type(type)
-    return @pets.select{|pet| pet.name if pet.type == type}.map{|pet| pet.name}
+    return @pets.map!{|pet| pet.name if pet.type == type}.compact
   end
   def get_number_of_pets_costing_at_least(value)
     return @pets.select{|pet| pet if pet.price >= value}.count
