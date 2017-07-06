@@ -23,14 +23,14 @@ class TestPetShop < Minitest::Test
     assert_equal(:cat, pet_type)
  end
 
- # def test_get_names_of_dogs
- #    dogs = @pet_shop.get_names_of_all_pets_of_type(:dog)
- #    assert_equal(["Sir Lancelot", "Arthur", "Tristan"], dogs)
- # end
+ def test_get_names_of_dogs
+    dogs = @pet_shop.get_names_of_all_pets_of_type(:dog)
+    assert_equal(["Sir Lancelot", "Arthur", "Tristan"], dogs)
+ end
 
- # def test_get_number_of_pets_costing_at_least_1000
- #    pets = @pet_shop.get_number_of_pets_costing_at_least(1000)
- #    assert_equal(2, pets)
- # end
+ def test_get_number_of_pets_costing_at_least_1000
+    pets = @pet_shop.get_number_of_pets_costing_at_least(1000)
+    assert_equal(2, pets)
+ end
 
 end
